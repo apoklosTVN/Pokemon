@@ -16,6 +16,13 @@ class Program
 {
     static void Main(string[] args)
     {
-
+        string[] pokemon = ["Pikachu","Dracaufeu","Tortank","Florizarre","Ectoplasma","Ronflex"];
+        foreach (string pokemonname in pokemon)
+        {   
+            System.Console.Write(System.Array.IndexOf(pokemon, pokemonname) + 1);    
+            System.Console.Write(" ");
+            System.Console.WriteLine(pokemonname);
+        }
+        System.Console.WriteLine(pokemon.Length);
     }
 }
